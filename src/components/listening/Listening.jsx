@@ -1,5 +1,6 @@
 import data from '../../data'
 import React, { useState } from 'react';
+import './Listening.scss'
 
 function Listening() {
 
@@ -7,8 +8,11 @@ function Listening() {
 
     return(
         <div className='listening' style={{
-            background: data + '.[' + {current} + '].background'
-        }}><button onClick={setCurrent(current+1)}>CLICK ME {current}</button></div>
+            backgroundImage: `url(` + data[current].bg + `)`
+        }}>
+            <button onClick={() => setCurrent(current+1)}>{current}</button>
+            <a href="/"><h1 className="back">Back to Main</h1></a>
+        </div>
     )
 }
 
