@@ -5,9 +5,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3vh;
 }
 
-.album {
-    height: 90vh; /* Magic here */
+.opposite_cut {
+    height: 86vh;
+    width: 40em;
+    top: 12.5px;
+}
+
+.listen {
+    position: fixed;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    bottom: -2vh;
+    color: rgb(94, 94, 94);
+    letter-spacing: 1.5vw;
+    width: max-content;
+    font-size: larger;
+
+    &:hover {
+        color: yellow;
+    }
+}
+
+.name {
+    transform: rotate(-90deg);
+    position: fixed;
+    left: -3em;
+    bottom: 50vh;
+    letter-spacing: 1.3em;
+    color: rgb(94, 94, 94);
+    font-size: larger;
+}
+
+.title {
+    transform: rotate(90deg);
+    position: fixed;
+    right: -9.6em;
+    bottom: 48vh;
+    letter-spacing: 1.3em;
+    width: max-content;
+    color: rgb(94, 94, 94);
+    font-size: larger;
+}
+
+.album-parallax {
+    height: 86vh;
+    width: 40em;
+    position: fixed;
+    top: 12px;
 }

@@ -1,19 +1,37 @@
 import data from '../../data'
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import './Listening.scss'
+import Wavesurfer from '../wavesurfer/Wavesurfer';
+import { connect } from 'react-redux';
+import increment from '../../actions/increment';
+import decrement from '../../actions/decrement';
 
-function Listening() {
+class Listening extends Component {
 
-    const [current, setCurrent] = useState(0)
+    render() {
+        console.log(this.props)
 
-    return(
-        <div className='listening' style={{
-            backgroundImage: `url(` + data[current].bg + `)`
-        }}>
-            <button onClick={() => setCurrent(current+1)}>{current}</button>
-            <a href="/"><h1 className="back">Back to Main</h1></a>
-        </div>
-    )
+        return(
+            <div className='listening' style={{backgroundImage: `url(` + data[this.props.count].bg + `)`}}>
+                <a href="/"><h1 className="back">Back to Main</h1></a>
+
+                <Wavesurfer props={this.props}/>
+            </div>
+        )
+    }
 }
 
-export default Listening
+const mapStateToProps = (state) => {
+    return {
+      count: state.count
+    }
+  }
+
+const mapDispatchToProps = ({
+    // increment: () => dispatch(increment),
+    // decrement: () => dispatch(decrement)
+    increment: increment,
+    decrement: decrement
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Listening)

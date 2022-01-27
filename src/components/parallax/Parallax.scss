@@ -1,0 +1,44 @@
+.parallax-tilt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+    width: 40em;
+}
+
+.parallax {
+    height: 86vh;
+    width: 40em;
+    position: fixed;
+    top: 12px;
+}
+
+.cut {
+    height: 70vh;
+    width: 25em;
+}
+
+// .body {
+//     position: fixed;
+//     height: 60vh;
+//     width: 20vw;
+//     top: 5vh;
+//     left: 20vw;
+// }
+
+// .words {
+//     position: fixed;
+//     height: 60vh;
+//     width: 20vw;
+//     top: 5vh;
+//     left: 2vw;
+// }
+
+// .advisory {
+//     position: fixed;
+//     height: 8vh;
+//     width: 8vw;
+//     top: 75vh;
+//     left: 30vw;
+// }
