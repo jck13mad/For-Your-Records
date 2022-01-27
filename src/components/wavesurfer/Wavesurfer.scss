@@ -53,14 +53,14 @@
 }
 
 .waveformContainer {
-  display: flexbox; 
-  flex-direction: row; 
-  align-items: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
   justify-content: center; 
-  height: 100px; 
-  width: 100%; 
+  height: 200px; 
+  width: 90vw; 
   background: transparent;
-  
+  align-content: center;
 }
 
 .waveformControls {

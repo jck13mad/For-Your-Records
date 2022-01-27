@@ -15,7 +15,9 @@ class Listening extends Component {
             <div className='listening' style={{backgroundImage: `url(` + data[this.props.count].bg + `)`}}>
                 <a href="/"><h1 className="back">Back to Main</h1></a>
 
-                <Wavesurfer props={this.props}/>
+                <div className="wavesurfer">
+                    <Wavesurfer props={this.props}/>
+                </div>
             </div>
         )
     }

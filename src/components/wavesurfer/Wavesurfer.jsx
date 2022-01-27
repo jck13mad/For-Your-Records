@@ -43,18 +43,45 @@ handlePlay = () => {
   this.waveform.playPause();
 };
 
+handlePause = () => {
+  if(this.state.playing === true) {
+    this.setState({playing: false})
+  }
+}
+
 async forward() {
-  this.handlePlay()
-  this.waveform.destroy()
-  await this.props.props.increment()
-  this.componentDidMount()
+
+  if(this.props.props.count === 4){
+    this.handlePause()
+    this.waveform.destroy()
+    await this.props.props.decrement()
+    await this.props.props.decrement()
+    await this.props.props.decrement()
+    await this.props.props.decrement()
+    this.componentDidMount()
+  } else {
+    this.handlePause()
+    this.waveform.destroy()
+    await this.props.props.increment()
+    this.componentDidMount()
+  }
 }
 
 async reverse() {
-  this.handlePlay()
-  this.waveform.destroy()
-  await this.props.props.decrement();
-  this.componentDidMount() 
+  if(this.props.props.count === 0){
+    this.handlePause()
+    this.waveform.destroy()
+    await this.props.props.increment()
+    await this.props.props.increment()
+    await this.props.props.increment()
+    await this.props.props.increment()
+    this.componentDidMount()
+  } else {
+    this.handlePause()
+    this.waveform.destroy()
+    await this.props.props.decrement();
+    this.componentDidMount()
+  } 
 }
   
   render() {
@@ -71,8 +98,9 @@ async reverse() {
               <img src={next} alt='next' />
             </div>
           </div>
-        <div className='wave' id="waveform" style={{width: '100%', height: '90px'}} />
-        <audio id="track" src={data[this.props.props.count].audio_src} />
+        <div className='wave' id="waveform" style={{width: '100%', height: '90px'}}>
+          <audio id="track" src={data[this.props.props.count].audio_src} />
+        </div>
       </div>
     );
   }
