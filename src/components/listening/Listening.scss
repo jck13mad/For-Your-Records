@@ -12,8 +12,8 @@
     bottom: 50vh;
     letter-spacing: 1.3em;
     color: white;
-    font-size: larger;
-    font-weight: bold;
+    font-size: 2.5vh;
+    font-weight: bolder;
 
     &:hover {
         color: yellow;
@@ -25,4 +25,148 @@
     left: 50%;
     top: 85%;
     transform: translate(-50%, -50%);
+}
+
+.song_title {
+    position: fixed;
+    left: 50vw;
+    bottom: 25vh;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1.3vw;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.media-2 {
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-between;
+    left: 4em;
+    top: 2.5vh;
+    // width: 250px;
+    width: 20em;
+    padding-right: 6em;
+
+    img {
+        position: absolute;
+    }
+
+    .apple {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .spotify {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .instagram {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .youtube {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .twitter {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+
 }

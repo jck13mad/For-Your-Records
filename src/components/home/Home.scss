@@ -55,3 +55,476 @@
     position: fixed;
     top: 12px;
 }
+
+.media {
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-between;
+    left: 4em;
+    top: 2.5vh;
+    // width: 250px;
+    width: 17vw;
+    padding-right: 5em;
+
+    img {
+        position: absolute;
+    }
+
+    .apple {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .spotify {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .instagram {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .youtube {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+    .twitter {
+        width: 35px;
+
+        .top {
+            width: 35px;
+        }
+
+        .bottom {
+            visibility: hidden;
+            width: 35px;
+        }
+        
+        &:hover {
+            .top {
+                visibility: hidden;
+            }
+
+            .bottom {
+                visibility: visible;
+                width: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1191px){
+    .media-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1191px) {
+    .title {
+        bottom: 40vh;
+    }
+
+    .media {
+        display: none;
+    }
+
+    nav {
+        background-color: #1E1E23;
+        height: 100px;
+      }
+      
+      
+      #menuToggle {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 20px;
+        right: 60px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      
+      #menuToggle input
+      {
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+      }
+      
+      #menuToggle span
+      {
+        display: flex;
+        width: 50px;
+        height: 6px;
+        margin-bottom: 5px;
+        position: relative;
+        background: rgb(94, 94, 94);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+      }
+      
+      #menuToggle span:first-child
+      {
+        transform-origin: 0% 0%;
+      }
+      
+      #menuToggle span:nth-last-child(2)
+      {
+        transform-origin: 0% 100%;
+      }
+      
+      #menuToggle input:checked ~ span
+      {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: #36383F;
+      }
+      #menuToggle input:checked ~ span:nth-last-child(3)
+      {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+      
+      #menuToggle input:checked ~ span:nth-last-child(2)
+      {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+      
+      #menu
+      {
+        position: absolute;
+        width: 40vw;
+        height: 100vh;
+        box-shadow: 0 0 10px #85888C;
+        margin: -50px 0 0 -50px;
+        padding: 30px;
+        padding-top: 180px;
+        background-color: #E3D7BF;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.75,0.2,0.05,1.0);
+
+        a {
+            text-decoration: none;
+            color: #1E1E23;
+            opacity:1;
+
+            &:hover {
+                color: white;
+            }
+      }
+
+      .media-1 {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 350px;
+        top: 40vh;
+        right: 6vw;
+        // width: 250px;
+    
+        img {
+            position: absolute;
+        }
+    
+        .apple {
+            width: 35px;
+    
+            .top {
+                width: 35px;
+            }
+    
+            .bottom {
+                visibility: hidden;
+                width: 35px;
+            }
+            
+            &:hover {
+                .top {
+                    visibility: hidden;
+                }
+    
+                .bottom {
+                    visibility: visible;
+                    width: 35px;
+                }
+            }
+        }
+        .spotify {
+            width: 35px;
+    
+            .top {
+                width: 35px;
+            }
+    
+            .bottom {
+                visibility: hidden;
+                width: 35px;
+            }
+            
+            &:hover {
+                .top {
+                    visibility: hidden;
+                }
+    
+                .bottom {
+                    visibility: visible;
+                    width: 35px;
+                }
+            }
+        }
+        .instagram {
+            width: 35px;
+    
+            .top {
+                width: 35px;
+            }
+    
+            .bottom {
+                visibility: hidden;
+                width: 35px;
+            }
+            
+            &:hover {
+                .top {
+                    visibility: hidden;
+                }
+    
+                .bottom {
+                    visibility: visible;
+                    width: 35px;
+                }
+            }
+        }
+        .youtube {
+            width: 35px;
+    
+            .top {
+                width: 35px;
+            }
+    
+            .bottom {
+                visibility: hidden;
+                width: 35px;
+            }
+            
+            &:hover {
+                .top {
+                    visibility: hidden;
+                }
+    
+                .bottom {
+                    visibility: visible;
+                    width: 35px;
+                }
+            }
+        }
+        .twitter {
+            width: 35px;
+    
+            .top {
+                width: 35px;
+            }
+    
+            .bottom {
+                visibility: hidden;
+                width: 35px;
+            }
+            
+            &:hover {
+                .top {
+                    visibility: hidden;
+                }
+    
+                .bottom {
+                    visibility: visible;
+                    width: 35px;
+                }
+            }
+        }
+      }
+
+    }
+      
+      #menu li
+      {
+        padding: 10px 0;
+        transition-delay: 2s;
+      }
+      
+      #menuToggle input:checked ~ ul
+      {
+        transform: none;
+      }
+
+      ul {
+        padding: 0;
+        list-style-type: none;
+      }
+      
+      .container {
+        margin-top: 50px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+@media screen and (max-width: 1000px) {
+    .opposite_cut {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 678px) {
+    .cut-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .home {
+        position: relative;
+
+    }
+
+    .name {
+        transform: none;
+        top: 10px;
+        left: 20px;
+    }
+
+    .cut-1 {
+        // height: 70vh;
+        // width: 25em;
+        // position: absolute;
+        // top: 50%;
+        // margin-top: -225px;
+        // margin-left: 120px;
+        width: 100vw;
+        height: 90vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+    }
+
+    .listen {
+        display: none;
+    }
+
+    .title {
+        // transform: none;
+        // top: 50px;
+        // left: 10px;
+        // letter-spacing: .43em;
+        display: none;
+    }
+
+    .parallax {
+        .cut {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .name {
+        letter-spacing: 3.5vw;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #menuToggle {
+        right: 30px;
+    }
+}

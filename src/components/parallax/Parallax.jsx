@@ -16,7 +16,7 @@ class Parallax extends Component {
                     // glareMaxOpacity={0.45}
                     scale={1.04}
                 >
-                    <div className="cut-1">
+                    <div className="cut">
                         <img src={cut} alt="album" className="cut" />
                     </div>
                 </Tilt>

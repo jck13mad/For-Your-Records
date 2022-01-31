@@ -87,17 +87,18 @@ async reverse() {
   render() {
     return (
       <div className='waveformContainer'>
-          <div className="waveformControls">
-            <div className="previous" onClick={this.reverse}>
-              <img src={previous} alt="previous" />
-            </div>
-            <div className="playButton" onClick={this.handlePlay}>
-              <img src={!this.state.playing ? play : pause} alt="play or pause"  />
-            </div>
-            <div className="next" onClick={this.forward}>
-              <img src={next} alt='next' />
-            </div>
+        <div className="waveformControls">
+          <div className="previous" onClick={this.reverse}>
+            <img src={previous} alt="previous" />
           </div>
+          <div className="playButton" onClick={this.handlePlay}>
+            <img src={!this.state.playing ? play : pause} alt="play or pause"  />
+          </div>
+          <div className="next" onClick={this.forward}>
+            <img src={next} alt='next' />
+          </div>
+        </div>
+
         <div className='wave' id="waveform" style={{width: '100%', height: '90px'}}>
           <audio id="track" src={data[this.props.props.count].audio_src} />
         </div>
