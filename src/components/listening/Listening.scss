@@ -14,6 +14,7 @@
     color: white;
     font-size: 2.5vh;
     font-weight: bolder;
+    width: max-content;
 
     &:hover {
         color: yellow;
@@ -42,11 +43,11 @@
 .media-2 {
     position: fixed;
     display: inline-flex;
-    justify-content: space-between;
-    left: 4em;
+    justify-content: space-around;
+    left: 4vw;
     top: 2.5vh;
     // width: 250px;
-    width: 20em;
+    width: 20vw;
     padding-right: 6em;
 
     img {

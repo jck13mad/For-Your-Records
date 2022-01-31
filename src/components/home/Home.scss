@@ -17,7 +17,7 @@
     position: fixed;
     left: 50vw;
     transform: translate(-50%, -50%);
-    bottom: -2vh;
+    bottom: 0;
     color: rgb(94, 94, 94);
     letter-spacing: 1.5vw;
     width: max-content;
@@ -42,9 +42,8 @@
     transform: rotate(90deg);
     position: fixed;
     right: -9.6em;
-    bottom: 48vh;
+    bottom: 45vh;
     letter-spacing: 1.3em;
-    width: max-content;
     color: rgb(94, 94, 94);
     font-size: larger;
 }
@@ -453,6 +452,14 @@
         justify-content: center;
         align-items: center;
       }
+}
+
+@media screen and (max-width: 1000px) and (max-height: 789px) {
+    .title {
+        letter-spacing: 2vw;
+        font-size: medium;
+        right: -10em;
+    }
 }
 
 @media screen and (max-width: 1000px) {
