@@ -25,31 +25,31 @@ class Listening extends Component {
             <div className='listening' style={{backgroundImage: `url(` + data[this.props.count].bg + `)`}}>
                 <div className='media-2'>
                     <div className='spotify'>
-                        <a href="#">
+                        <a href={data[this.props.count].spotify}>
                             <img src={spotify} alt='spotify' className='top' />
                             <img src={spotify_one} alt='spotify_1' className='bottom' />
                         </a>
                     </div>
                     <div className='apple'>
-                        <a href="#">
+                        <a href={data[this.props.count].apple}>
                             <img src={apple} alt='apple' className='top'/>
                             <img src={apple_one} alt='apple_1' className='bottom' />
                         </a>
                     </div>
                     <div className='instagram'>
-                        <a href="#">
+                        <a href="https://instagram.com/317young_sam?utm_medium=copy_link">
                             <img src={insta} alt='instagram' className='top' />
                             <img src={insta_one} alt='instagram_1' className='bottom' />
                         </a>
                     </div>
                     <div className='youtube'>
-                        <a href="#">
+                        <a href={data[this.props.count].youtube}>
                             <img src={youtube} alt='youtube' className='top' />
                             <img src={youtube_one} alt='youtube_1' className='bottom' />
                         </a>
                     </div>
                     <div className='twitter'>
-                        <a href="#">
+                        <a href="https://mobile.twitter.com/samisyoungish">
                             <img src={twitter} alt='twitter' className='top' />
                             <img src={twitter_one} alt='twitter_1' className='bottom' />
                         </a>

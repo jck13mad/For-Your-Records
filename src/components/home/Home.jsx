@@ -23,31 +23,31 @@ class Home extends Component {
             <div className="home">
                 <div className='media'>
                     <div className='spotify'>
-                        <a href="#">
+                        <a href="https://open.spotify.com/album/2B3A4dq7jQUvQUSMX1lkzm">
                             <img src={spotify} alt='spotify' className='top' />
                             <img src={spotify_one} alt='spotify_1' className='bottom' />
                         </a>
                     </div>
                     <div className='apple'>
-                        <a href="#">
+                        <a href="https://music.apple.com/us/album/for-your-records/1595879003">
                             <img src={apple} alt='apple' className='top'/>
                             <img src={apple_one} alt='apple_1' className='bottom' />
                         </a>
                     </div>
                     <div className='instagram'>
-                        <a href="#">
+                        <a href="https://instagram.com/317young_sam?utm_medium=copy_link">
                             <img src={insta} alt='instagram' className='top' />
                             <img src={insta_one} alt='instagram_1' className='bottom' />
                         </a>
                     </div>
                     <div className='youtube'>
-                        <a href="#">
+                        <a href="https://youtube.com/playlist?list=OLAK5uy_lZeM7DXeHRrTEPAaZCZ9KBzKW2Zj7tivk">
                             <img src={youtube} alt='youtube' className='top' />
                             <img src={youtube_one} alt='youtube_1' className='bottom' />
                         </a>
                     </div>
                     <div className='twitter'>
-                        <a href="#">
+                        <a href="https://mobile.twitter.com/samisyoungish">
                             <img src={twitter} alt='twitter' className='top' />
                             <img src={twitter_one} alt='twitter_1' className='bottom' />
                         </a>
@@ -62,35 +62,35 @@ class Home extends Component {
                             <span></span>
                         <ul id="menu">
                             <li><a href="/listening">Listen Now</a></li>
-                            <li><a href="#">Shop <br />(Coming Soon)</a></li>
+                            <li className="shop"><a href="/">Shop <br />(Coming Soon)</a></li>
 
                             <div className='media-1'>
                                 <div className='spotify'>
-                                    <a href="#">
+                                    <a href="https://open.spotify.com/album/2B3A4dq7jQUvQUSMX1lkzm">
                                         <img src={spotify} alt='spotify' className='top' />
                                         <img src={spotify_one} alt='spotify_1' className='bottom' />
                                     </a>
                                 </div>
                                 <div className='apple'>
-                                    <a href="#">
+                                    <a href="https://music.apple.com/us/album/for-your-records/1595879003">
                                         <img src={apple} alt='apple' className='top'/>
                                         <img src={apple_one} alt='apple_1' className='bottom' />
                                     </a>
                                 </div>
                                 <div className='instagram'>
-                                    <a href="#">
+                                    <a href="https://instagram.com/317young_sam?utm_medium=copy_link">
                                         <img src={insta} alt='instagram' className='top' />
                                         <img src={insta_one} alt='instagram_1' className='bottom' />
                                     </a>
                                 </div>
                                 <div className='youtube'>
-                                    <a href="#">
+                                    <a href="https://youtube.com/playlist?list=OLAK5uy_lZeM7DXeHRrTEPAaZCZ9KBzKW2Zj7tivk">
                                         <img src={youtube} alt='youtube' className='top' />
                                         <img src={youtube_one} alt='youtube_1' className='bottom' />
                                     </a>
                                 </div>
                                 <div className='twitter'>
-                                    <a href="#">
+                                    <a href="https://mobile.twitter.com/samisyoungish">
                                         <img src={twitter} alt='twitter' className='top' />
                                         <img src={twitter_one} alt='twitter_1' className='bottom' />
                                     </a>
