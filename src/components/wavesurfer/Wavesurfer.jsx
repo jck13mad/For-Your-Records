@@ -33,6 +33,7 @@ class Wavesurfer extends Component {
       responsive: true,
       waveColor: 'white',
       cursorColor: 'transparent',
+      partialRender: true
     });
 
     this.waveform.load(track);

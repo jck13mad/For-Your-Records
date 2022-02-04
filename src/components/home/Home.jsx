@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import './Home.scss'
 // import cover from '../../pics/album.png'
-import opposite_cut from '../../pics/opposite-cut.png'
+import opposite_cut from '../../pics/oppo-cut.webp'
 import Parallax from "../parallax/Parallax";
 import spotify from '../../pics/media/spotify_black.png'
 import apple from '../../pics/media/apple_black.png'
 import youtube from '../../pics/media/youtube_black.png'
 import insta from '../../pics/media/insta_black.png'
 import twitter from '../../pics/media/twitter_black.png'
-import cut from '../../pics/cut.png'
+import cut from '../../pics/cut.webp'
 import spotify_one from '../../pics/media/spotify_white.png'
 import apple_one from '../../pics/media/apple_white.png'
 import youtube_one from '../../pics/media/youtube_white.png'

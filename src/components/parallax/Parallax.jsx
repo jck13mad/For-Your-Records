@@ -4,7 +4,7 @@ import Tilt from 'react-parallax-tilt';
 // import body from '../../pics/body.png'
 // import words from '../../pics/words.png'
 // import advisory from '../../pics/advisory.png'
-import cut from '../../pics/cut.png'
+import cut from '../../pics/cut.webp'
 
 class Parallax extends Component {
     render() {
