@@ -171,3 +171,29 @@
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    .media-2 {
+        position: fixed;
+        left: 60%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media screen and (max-width: 1191px) {
+    .listening {
+        background-size: 120vw 100vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .listening {
+        background-size: 130vw 100vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .listening {
+        background-size: 150vw 100vh;
+    }
+}

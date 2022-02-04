@@ -106,7 +106,7 @@ class Home extends Component {
                     <Parallax className="parallax"/>
                 </section>
 
-                <a href="/listening"><h1 className="listen">CLICK HERE TO LISTEN</h1></a>
+                <a href="/listening"><h1 className="listen">LISTEN NOW</h1></a>
                 <h1 className="name">SAM YOUNG</h1>
                 <h1 className="title">FOR YOUR RECORDS</h1>
             </div>
