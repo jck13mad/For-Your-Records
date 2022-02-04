@@ -194,7 +194,7 @@
 
 @media screen and (max-width: 1191px) {
     .title {
-        bottom: 50vh;
+        bottom: 45vh;
     }
 
     .media {
@@ -281,7 +281,7 @@
         margin: -50px 0 0 -50px;
         padding: 30px;
         padding-left: 15px;
-        padding-top: 250px;
+        padding-top: 225px;
         background-color: #E3D7BF;
         -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
@@ -295,6 +295,7 @@
 
             &:hover {
                 color: white;
+                text-decoration: underline;
             }
       }
 
@@ -455,10 +456,10 @@
       }
 }
 
-@media screen and (max-height: 610px) {
+@media screen and (max-height: 500px) {
     .title {
-        letter-spacing: 1.5vw;
-        font-size: medium;
+        letter-spacing: 1vw;
+        font-size: small;
         bottom: 60vh;
         right: -5em;
     }
@@ -469,7 +470,7 @@
         letter-spacing: 2vw;
         font-size: medium;
         right: -5em;
-        bottom: 60vh;
+        bottom: 50vh;
     }
 }
 
