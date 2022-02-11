@@ -210,8 +210,9 @@
 @supports (-webkit-touch-callout: none) {
     .reminder {
         position: fixed;
+        width: fit-content;
         bottom: 0;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
         left: 50vw;
         transform: translate(-50%, -50%);
         color: yellow;
