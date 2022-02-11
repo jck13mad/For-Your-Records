@@ -61,7 +61,7 @@ class Listening extends Component {
                 <div className="wavesurfer">
                     <Wavesurfer props={this.props}/>
                 </div>
-                <h2 className='reminder'>Don't forget to turn off Silent Mode</h2>
+                <h5 className='reminder'>Don't forget to turn off Silent Mode</h5>
             </div>
         )
     }
