@@ -209,6 +209,7 @@
 
 @supports (-webkit-touch-callout: none) {
     .reminder {
+        position: fixed;
         bottom: 0;
         color: yellow;
         text-shadow: 2px 2px 5px black;
