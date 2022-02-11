@@ -10,11 +10,11 @@ import apple from '../../pics/media/apple_white.png'
 import youtube from '../../pics/media/youtube_white.png'
 import insta from '../../pics/media/insta_white.png'
 import twitter from '../../pics/media/twitter_white.png'
-import spotify_one from '../../pics/media/spotify_black.png'
-import apple_one from '../../pics/media/apple_black.png'
-import youtube_one from '../../pics/media/youtube_black.png'
-import insta_one from '../../pics/media/insta_black.png'
-import twitter_one from '../../pics/media/twitter_black.png'
+import spotify_one from '../../pics/media/spotify_yellow.png'
+import apple_one from '../../pics/media/apple_yellow.png'
+import youtube_one from '../../pics/media/youtube_yellow.png'
+import insta_one from '../../pics/media/insta_yellow.png'
+import twitter_one from '../../pics/media/twitter_yellow.png'
 
 class Listening extends Component {
 
@@ -61,6 +61,7 @@ class Listening extends Component {
                 <div className="wavesurfer">
                     <Wavesurfer props={this.props}/>
                 </div>
+                <h2 className='reminder'>Don't forget to turn off Silent Mode</h2>
             </div>
         )
     }

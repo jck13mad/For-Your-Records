@@ -15,9 +15,11 @@
     font-size: 2.5vh;
     font-weight: bolder;
     width: max-content;
+    text-shadow: 2px 2px 5px black;
 
     &:hover {
         color: yellow;
+        text-shadow: 2px 2px 5px black;
     }
 }
 
@@ -38,6 +40,7 @@
     font-size: 2.5vh;
     font-weight: bolder;
     text-align: center;
+    text-shadow: 5px 5px 10px black
 }
 
 .media-2 {
@@ -197,3 +200,24 @@
         background-size: 150vw 100vh;
     }
 }
+
+@media screen and (max-height: 566px) {
+    .song_title {
+        bottom: 150px;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    .reminder {
+        bottom: 0;
+        margin-bottom: 10px;
+        color: yellow;
+        text-shadow: 2px 2px 5px black;
+    }
+}
+
+@supports not (-webkit-touch-callout: none) {
+    .reminder {
+        display: none;
+    } 
+  }
